@@ -1,7 +1,5 @@
 # CryptoDebt
 
-Paper: **CryptoDebt: Predicting and Reducing Post-Quantum Migration Effort through Crypto-Agility Smells**
-
 Eight-category crypto-agility smell detection for Java, with dependency paths, debt scores and refactoring output.
 
 ## Files
@@ -40,12 +38,12 @@ Each finding records its root, category, location, evidence path, fan-out, bound
 
 ## Implementation scope and data
 
-The front end uses line-oriented lexical analysis and bounded syntactic dependencies. Type resolution and context-sensitive inter-module data flow are not included. Other refactoring recipes return preconditions and assisted status. The original corpus, manual labels, 96 migration-time tasks and 76 acceptance records are not included.
+The front end uses line-oriented lexical analysis and bounded syntactic dependencies. Type resolution and context-sensitive inter-module data flow are not included. Other refactoring recipes return preconditions and assisted status. The package includes generated Java fixtures. External corpora, manual annotations and developer migration-time datasets are not bundled.
 
-The implementation basis is the paper PDF. Examples and controlled benchmarks are produced by the included generators. PDF page counts, SHA-256 values and experimental-provenance flags are recorded in `provenance.json`.
+Examples and controlled benchmarks are produced by the included generators.
 
 ## Outputs and validation records
 
 results/analysis.json, results/role_factory.patch and results/java_build.json.
 
-`results/test_log.txt` contains the test log. `results/verification.json` records the test count, exit status and Python version. `results/source_format.json` records code-comment and docstring counts. `CHECKSUMS.sha256` lists file hashes.
+`results/test_log.txt` contains the test log. `results/verification.json` records the test count, exit status and Python version. `CHECKSUMS.sha256` lists file hashes.
