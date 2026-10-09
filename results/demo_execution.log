@@ -1,0 +1,1 @@
+{"roots": 3, "findings": 25, "cadi": 52.61496230476268, "smells": {"AlgLit": 4, "Config": 4, "Provider": 3, "Protocol": 1, "Serialize": 5, "SizeAssump": 6, "TestOracle": 1, "KeyType": 1}}

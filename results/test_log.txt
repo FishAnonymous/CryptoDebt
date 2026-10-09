@@ -1,0 +1,11 @@
+test_dependency_and_debt (test_analysis.AnalysisTests.test_dependency_and_debt) ... ok
+test_eight_smell_categories_have_executable_fixture (test_analysis.AnalysisTests.test_eight_smell_categories_have_executable_fixture) ... ok
+test_invalid_normalizer (test_analysis.AnalysisTests.test_invalid_normalizer) ... ok
+test_noncrypto_and_comments (test_analysis.AnalysisTests.test_noncrypto_and_comments) ... ok
+test_role_patch_preserves_algorithm (test_analysis.AnalysisTests.test_role_patch_preserves_algorithm) ... ok
+test_suppression (test_analysis.AnalysisTests.test_suppression) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.019s
+
+OK

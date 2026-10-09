@@ -1,0 +1,17 @@
+--- a/LocalSigner.java
++++ b/LocalSigner.java
+@@ -1,6 +1,6 @@
+ import java.security.Signature;
+ class LocalSigner {
+     static Signature create() throws Exception {
+-        return Signature.getInstance("SHA256withRSA");
++        return Signature.getInstance(CryptoPolicy.signingSuite0());
+     }
+ }
+--- /dev/null
++++ b/CryptoPolicy.java
+@@ -0,0 +1,4 @@
++final class CryptoPolicy {
++    private CryptoPolicy() {}
++    static String signingSuite0() { return "SHA256withRSA"; }
++}

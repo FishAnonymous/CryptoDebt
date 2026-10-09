@@ -1,0 +1,1580 @@
+{
+  "roots": [
+    {
+      "id": "CryptoTest.java:5",
+      "api": "Signature",
+      "confidence": "syntactic-import-supported",
+      "role": "signature"
+    },
+    {
+      "id": "LocalSigner.java:4",
+      "api": "Signature",
+      "confidence": "syntactic-import-supported",
+      "role": "signature"
+    },
+    {
+      "id": "Signer.java:5",
+      "api": "Signature",
+      "confidence": "syntactic-import-supported",
+      "role": "signature"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "CryptoTest.java:1",
+      "file": "CryptoTest.java",
+      "line": 1,
+      "code": "import java.security.Signature;",
+      "method": "<fields>",
+      "words": [
+        "Signature",
+        "import",
+        "java",
+        "security"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:2",
+      "file": "CryptoTest.java",
+      "line": 2,
+      "code": "import java.security.interfaces.RSAPublicKey;",
+      "method": "<fields>",
+      "words": [
+        "RSAPublicKey",
+        "import",
+        "interfaces",
+        "java",
+        "security"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:3",
+      "file": "CryptoTest.java",
+      "line": 3,
+      "code": "class CryptoTest {",
+      "method": "<fields>",
+      "words": [
+        "CryptoTest",
+        "class"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:4",
+      "file": "CryptoTest.java",
+      "line": 4,
+      "code": "public void signTest(byte[] message, java.security.PrivateKey key) throws Exception {",
+      "method": "signTest",
+      "words": [
+        "Exception",
+        "PrivateKey",
+        "byte",
+        "java",
+        "key",
+        "message",
+        "public",
+        "security",
+        "signTest",
+        "throws",
+        "void"
+      ],
+      "calls": [
+        "signTest"
+      ],
+      "boundary": true
+    },
+    {
+      "id": "CryptoTest.java:5",
+      "file": "CryptoTest.java",
+      "line": 5,
+      "code": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "method": "signTest",
+      "words": [
+        "Signature",
+        "getInstance",
+        "signer"
+      ],
+      "calls": [
+        "getInstance"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:6",
+      "file": "CryptoTest.java",
+      "line": 6,
+      "code": "signer.initSign(key);",
+      "method": "signTest",
+      "words": [
+        "initSign",
+        "key",
+        "signer"
+      ],
+      "calls": [
+        "initSign"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:7",
+      "file": "CryptoTest.java",
+      "line": 7,
+      "code": "signer.update(message);",
+      "method": "signTest",
+      "words": [
+        "message",
+        "signer",
+        "update"
+      ],
+      "calls": [
+        "update"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:8",
+      "file": "CryptoTest.java",
+      "line": 8,
+      "code": "byte[] signature = signer.sign();",
+      "method": "signTest",
+      "words": [
+        "byte",
+        "sign",
+        "signature",
+        "signer"
+      ],
+      "calls": [
+        "sign"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:9",
+      "file": "CryptoTest.java",
+      "line": 9,
+      "code": "expose(signature);",
+      "method": "signTest",
+      "words": [
+        "expose",
+        "signature"
+      ],
+      "calls": [
+        "expose"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:10",
+      "file": "CryptoTest.java",
+      "line": 10,
+      "code": "if (signature.length > 0 && \"RSA\".equals(algorithm())) { send(signature); }",
+      "method": "signTest",
+      "words": [
+        "algorithm",
+        "equals",
+        "if",
+        "length",
+        "send",
+        "signature"
+      ],
+      "calls": [
+        "algorithm",
+        "equals",
+        "if",
+        "send"
+      ],
+      "boundary": true
+    },
+    {
+      "id": "CryptoTest.java:11",
+      "file": "CryptoTest.java",
+      "line": 11,
+      "code": "assertEquals(256, signature.length);",
+      "method": "signTest",
+      "words": [
+        "assertEquals",
+        "length",
+        "signature"
+      ],
+      "calls": [
+        "assertEquals"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:12",
+      "file": "CryptoTest.java",
+      "line": 12,
+      "code": "}",
+      "method": "signTest",
+      "words": [],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:13",
+      "file": "CryptoTest.java",
+      "line": 13,
+      "code": "public RSAPublicKey expose(byte[] signature) {",
+      "method": "expose",
+      "words": [
+        "RSAPublicKey",
+        "byte",
+        "expose",
+        "public",
+        "signature"
+      ],
+      "calls": [
+        "expose"
+      ],
+      "boundary": true
+    },
+    {
+      "id": "CryptoTest.java:14",
+      "file": "CryptoTest.java",
+      "line": 14,
+      "code": "return null;",
+      "method": "expose",
+      "words": [
+        "null",
+        "return"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:15",
+      "file": "CryptoTest.java",
+      "line": 15,
+      "code": "}",
+      "method": "expose",
+      "words": [],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:16",
+      "file": "CryptoTest.java",
+      "line": 16,
+      "code": "String algorithm() { return \"RSA\"; }",
+      "method": "<fields>",
+      "words": [
+        "String",
+        "algorithm",
+        "return"
+      ],
+      "calls": [
+        "algorithm"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:17",
+      "file": "CryptoTest.java",
+      "line": 17,
+      "code": "void send(byte[] signature) { }",
+      "method": "<fields>",
+      "words": [
+        "byte",
+        "send",
+        "signature",
+        "void"
+      ],
+      "calls": [
+        "send"
+      ],
+      "boundary": true
+    },
+    {
+      "id": "CryptoTest.java:18",
+      "file": "CryptoTest.java",
+      "line": 18,
+      "code": "void assertEquals(int expected, int actual) { if (expected != actual) throw new AssertionError(); }",
+      "method": "<fields>",
+      "words": [
+        "AssertionError",
+        "actual",
+        "assertEquals",
+        "expected",
+        "if",
+        "int",
+        "new",
+        "throw",
+        "void"
+      ],
+      "calls": [
+        "AssertionError",
+        "assertEquals",
+        "if"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "CryptoTest.java:19",
+      "file": "CryptoTest.java",
+      "line": 19,
+      "code": "}",
+      "method": "<fields>",
+      "words": [],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "LocalSigner.java:1",
+      "file": "LocalSigner.java",
+      "line": 1,
+      "code": "import java.security.Signature;",
+      "method": "<fields>",
+      "words": [
+        "Signature",
+        "import",
+        "java",
+        "security"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "LocalSigner.java:2",
+      "file": "LocalSigner.java",
+      "line": 2,
+      "code": "class LocalSigner {",
+      "method": "<fields>",
+      "words": [
+        "LocalSigner",
+        "class"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "LocalSigner.java:3",
+      "file": "LocalSigner.java",
+      "line": 3,
+      "code": "static Signature create() throws Exception {",
+      "method": "create",
+      "words": [
+        "Exception",
+        "Signature",
+        "create",
+        "static",
+        "throws"
+      ],
+      "calls": [
+        "create"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "LocalSigner.java:4",
+      "file": "LocalSigner.java",
+      "line": 4,
+      "code": "return Signature.getInstance(\"SHA256withRSA\");",
+      "method": "create",
+      "words": [
+        "Signature",
+        "getInstance",
+        "return"
+      ],
+      "calls": [
+        "getInstance"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "LocalSigner.java:5",
+      "file": "LocalSigner.java",
+      "line": 5,
+      "code": "}",
+      "method": "create",
+      "words": [],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "LocalSigner.java:6",
+      "file": "LocalSigner.java",
+      "line": 6,
+      "code": "}",
+      "method": "<fields>",
+      "words": [],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:1",
+      "file": "Signer.java",
+      "line": 1,
+      "code": "import java.security.Signature;",
+      "method": "<fields>",
+      "words": [
+        "Signature",
+        "import",
+        "java",
+        "security"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:2",
+      "file": "Signer.java",
+      "line": 2,
+      "code": "import java.security.interfaces.RSAPublicKey;",
+      "method": "<fields>",
+      "words": [
+        "RSAPublicKey",
+        "import",
+        "interfaces",
+        "java",
+        "security"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:3",
+      "file": "Signer.java",
+      "line": 3,
+      "code": "class Signer {",
+      "method": "<fields>",
+      "words": [
+        "Signer",
+        "class"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:4",
+      "file": "Signer.java",
+      "line": 4,
+      "code": "public byte[] sign(byte[] message, java.security.PrivateKey key) throws Exception {",
+      "method": "sign",
+      "words": [
+        "Exception",
+        "PrivateKey",
+        "byte",
+        "java",
+        "key",
+        "message",
+        "public",
+        "security",
+        "sign",
+        "throws"
+      ],
+      "calls": [
+        "sign"
+      ],
+      "boundary": true
+    },
+    {
+      "id": "Signer.java:5",
+      "file": "Signer.java",
+      "line": 5,
+      "code": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "method": "sign",
+      "words": [
+        "Signature",
+        "getInstance",
+        "signer"
+      ],
+      "calls": [
+        "getInstance"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:6",
+      "file": "Signer.java",
+      "line": 6,
+      "code": "signer.initSign(key);",
+      "method": "sign",
+      "words": [
+        "initSign",
+        "key",
+        "signer"
+      ],
+      "calls": [
+        "initSign"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:7",
+      "file": "Signer.java",
+      "line": 7,
+      "code": "signer.update(message);",
+      "method": "sign",
+      "words": [
+        "message",
+        "signer",
+        "update"
+      ],
+      "calls": [
+        "update"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:8",
+      "file": "Signer.java",
+      "line": 8,
+      "code": "byte[] signature = signer.sign();",
+      "method": "sign",
+      "words": [
+        "byte",
+        "sign",
+        "signature",
+        "signer"
+      ],
+      "calls": [
+        "sign"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:9",
+      "file": "Signer.java",
+      "line": 9,
+      "code": "byte[] frame = new byte[256];",
+      "method": "sign",
+      "words": [
+        "byte",
+        "frame",
+        "new"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:10",
+      "file": "Signer.java",
+      "line": 10,
+      "code": "System.arraycopy(signature, 0, frame, 0, signature.length);",
+      "method": "sign",
+      "words": [
+        "System",
+        "arraycopy",
+        "frame",
+        "length",
+        "signature"
+      ],
+      "calls": [
+        "arraycopy"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:11",
+      "file": "Signer.java",
+      "line": 11,
+      "code": "save(signature);",
+      "method": "sign",
+      "words": [
+        "save",
+        "signature"
+      ],
+      "calls": [
+        "save"
+      ],
+      "boundary": true
+    },
+    {
+      "id": "Signer.java:12",
+      "file": "Signer.java",
+      "line": 12,
+      "code": "return signature;",
+      "method": "sign",
+      "words": [
+        "return",
+        "signature"
+      ],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:13",
+      "file": "Signer.java",
+      "line": 13,
+      "code": "}",
+      "method": "sign",
+      "words": [],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:14",
+      "file": "Signer.java",
+      "line": 14,
+      "code": "public void save(byte[] signature) {",
+      "method": "save",
+      "words": [
+        "byte",
+        "public",
+        "save",
+        "signature",
+        "void"
+      ],
+      "calls": [
+        "save"
+      ],
+      "boundary": true
+    },
+    {
+      "id": "Signer.java:15",
+      "file": "Signer.java",
+      "line": 15,
+      "code": "if (signature.length != 256) throw new IllegalArgumentException();",
+      "method": "save",
+      "words": [
+        "IllegalArgumentException",
+        "if",
+        "length",
+        "new",
+        "signature",
+        "throw"
+      ],
+      "calls": [
+        "IllegalArgumentException",
+        "if"
+      ],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:16",
+      "file": "Signer.java",
+      "line": 16,
+      "code": "}",
+      "method": "save",
+      "words": [],
+      "calls": [],
+      "boundary": false
+    },
+    {
+      "id": "Signer.java:17",
+      "file": "Signer.java",
+      "line": 17,
+      "code": "}",
+      "method": "<fields>",
+      "words": [],
+      "calls": [],
+      "boundary": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "CryptoTest.java:10",
+      "target": "CryptoTest.java:11",
+      "kind": "def-use"
+    },
+    {
+      "source": "CryptoTest.java:13",
+      "target": "CryptoTest.java:14",
+      "kind": "method-summary"
+    },
+    {
+      "source": "CryptoTest.java:13",
+      "target": "CryptoTest.java:15",
+      "kind": "method-summary"
+    },
+    {
+      "source": "CryptoTest.java:4",
+      "target": "CryptoTest.java:6",
+      "kind": "def-use"
+    },
+    {
+      "source": "CryptoTest.java:4",
+      "target": "CryptoTest.java:7",
+      "kind": "def-use"
+    },
+    {
+      "source": "CryptoTest.java:5",
+      "target": "CryptoTest.java:6",
+      "kind": "def-use"
+    },
+    {
+      "source": "CryptoTest.java:6",
+      "target": "CryptoTest.java:7",
+      "kind": "def-use"
+    },
+    {
+      "source": "CryptoTest.java:7",
+      "target": "CryptoTest.java:8",
+      "kind": "def-use"
+    },
+    {
+      "source": "CryptoTest.java:8",
+      "target": "CryptoTest.java:10",
+      "kind": "def-use"
+    },
+    {
+      "source": "CryptoTest.java:8",
+      "target": "CryptoTest.java:9",
+      "kind": "def-use"
+    },
+    {
+      "source": "CryptoTest.java:8",
+      "target": "Signer.java:4",
+      "kind": "call"
+    },
+    {
+      "source": "CryptoTest.java:9",
+      "target": "CryptoTest.java:13",
+      "kind": "call"
+    },
+    {
+      "source": "Signer.java:10",
+      "target": "Signer.java:11",
+      "kind": "def-use"
+    },
+    {
+      "source": "Signer.java:10",
+      "target": "Signer.java:12",
+      "kind": "def-use"
+    },
+    {
+      "source": "Signer.java:11",
+      "target": "Signer.java:14",
+      "kind": "call"
+    },
+    {
+      "source": "Signer.java:14",
+      "target": "Signer.java:15",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:14",
+      "target": "Signer.java:16",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:4",
+      "target": "Signer.java:10",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:4",
+      "target": "Signer.java:11",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:4",
+      "target": "Signer.java:12",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:4",
+      "target": "Signer.java:13",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:4",
+      "target": "Signer.java:5",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:4",
+      "target": "Signer.java:6",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:4",
+      "target": "Signer.java:7",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:4",
+      "target": "Signer.java:8",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:4",
+      "target": "Signer.java:9",
+      "kind": "method-summary"
+    },
+    {
+      "source": "Signer.java:5",
+      "target": "Signer.java:6",
+      "kind": "def-use"
+    },
+    {
+      "source": "Signer.java:6",
+      "target": "Signer.java:7",
+      "kind": "def-use"
+    },
+    {
+      "source": "Signer.java:7",
+      "target": "Signer.java:8",
+      "kind": "def-use"
+    },
+    {
+      "source": "Signer.java:8",
+      "target": "Signer.java:10",
+      "kind": "def-use"
+    },
+    {
+      "source": "Signer.java:8",
+      "target": "Signer.java:4",
+      "kind": "call"
+    },
+    {
+      "source": "Signer.java:9",
+      "target": "Signer.java:10",
+      "kind": "def-use"
+    }
+  ],
+  "findings": [
+    {
+      "root": "CryptoTest.java:5",
+      "node": "CryptoTest.java:5",
+      "smell": "AlgLit",
+      "file": "CryptoTest.java",
+      "line": 5,
+      "evidence": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "path": [
+        "CryptoTest.java:5"
+      ],
+      "fanout": 22,
+      "boundary": true,
+      "debt": 8.28534293408552,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "CryptoTest.java:5",
+      "smell": "Config",
+      "file": "CryptoTest.java",
+      "line": 5,
+      "evidence": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "path": [
+        "CryptoTest.java:5"
+      ],
+      "fanout": 22,
+      "boundary": true,
+      "debt": 8.28534293408552,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "CryptoTest.java:5",
+      "smell": "Provider",
+      "file": "CryptoTest.java",
+      "line": 5,
+      "evidence": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "path": [
+        "CryptoTest.java:5"
+      ],
+      "fanout": 22,
+      "boundary": true,
+      "debt": 8.28534293408552,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "CryptoTest.java:10",
+      "smell": "Protocol",
+      "file": "CryptoTest.java",
+      "line": 10,
+      "evidence": "if (signature.length > 0 && \"RSA\".equals(algorithm())) { send(signature); }",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "CryptoTest.java:10"
+      ],
+      "fanout": 1,
+      "boundary": true,
+      "debt": 3.0,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "CryptoTest.java:10",
+      "smell": "Serialize",
+      "file": "CryptoTest.java",
+      "line": 10,
+      "evidence": "if (signature.length > 0 && \"RSA\".equals(algorithm())) { send(signature); }",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "CryptoTest.java:10"
+      ],
+      "fanout": 1,
+      "boundary": true,
+      "debt": 3.0,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "CryptoTest.java:10",
+      "smell": "SizeAssump",
+      "file": "CryptoTest.java",
+      "line": 10,
+      "evidence": "if (signature.length > 0 && \"RSA\".equals(algorithm())) { send(signature); }",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "CryptoTest.java:10"
+      ],
+      "fanout": 1,
+      "boundary": true,
+      "debt": 3.0,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "CryptoTest.java:11",
+      "smell": "SizeAssump",
+      "file": "CryptoTest.java",
+      "line": 11,
+      "evidence": "assertEquals(256, signature.length);",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "CryptoTest.java:10",
+        "CryptoTest.java:11"
+      ],
+      "fanout": 0,
+      "boundary": false,
+      "debt": 1.0,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "CryptoTest.java:11",
+      "smell": "TestOracle",
+      "file": "CryptoTest.java",
+      "line": 11,
+      "evidence": "assertEquals(256, signature.length);",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "CryptoTest.java:10",
+        "CryptoTest.java:11"
+      ],
+      "fanout": 0,
+      "boundary": false,
+      "debt": 1.0,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "CryptoTest.java:13",
+      "smell": "KeyType",
+      "file": "CryptoTest.java",
+      "line": 13,
+      "evidence": "public RSAPublicKey expose(byte[] signature) {",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "CryptoTest.java:9",
+        "CryptoTest.java:13"
+      ],
+      "fanout": 2,
+      "boundary": true,
+      "debt": 3.877443751081734,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "Signer.java:11",
+      "smell": "Serialize",
+      "file": "Signer.java",
+      "line": 11,
+      "evidence": "save(signature);",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "Signer.java:4",
+        "Signer.java:11"
+      ],
+      "fanout": 3,
+      "boundary": true,
+      "debt": 4.5,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "Signer.java:5",
+      "smell": "AlgLit",
+      "file": "Signer.java",
+      "line": 5,
+      "evidence": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "Signer.java:4",
+        "Signer.java:5"
+      ],
+      "fanout": 13,
+      "boundary": true,
+      "debt": 7.211032383086406,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "Signer.java:5",
+      "smell": "Config",
+      "file": "Signer.java",
+      "line": 5,
+      "evidence": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "Signer.java:4",
+        "Signer.java:5"
+      ],
+      "fanout": 13,
+      "boundary": true,
+      "debt": 7.211032383086406,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "Signer.java:5",
+      "smell": "Provider",
+      "file": "Signer.java",
+      "line": 5,
+      "evidence": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "Signer.java:4",
+        "Signer.java:5"
+      ],
+      "fanout": 13,
+      "boundary": true,
+      "debt": 7.211032383086406,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "Signer.java:9",
+      "smell": "SizeAssump",
+      "file": "Signer.java",
+      "line": 9,
+      "evidence": "byte[] frame = new byte[256];",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "Signer.java:4",
+        "Signer.java:9"
+      ],
+      "fanout": 6,
+      "boundary": true,
+      "debt": 5.7110323830864065,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "Signer.java:14",
+      "smell": "Serialize",
+      "file": "Signer.java",
+      "line": 14,
+      "evidence": "public void save(byte[] signature) {",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "Signer.java:4",
+        "Signer.java:11",
+        "Signer.java:14"
+      ],
+      "fanout": 2,
+      "boundary": true,
+      "debt": 3.877443751081734,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "node": "Signer.java:15",
+      "smell": "SizeAssump",
+      "file": "Signer.java",
+      "line": 15,
+      "evidence": "if (signature.length != 256) throw new IllegalArgumentException();",
+      "path": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "Signer.java:4",
+        "Signer.java:11",
+        "Signer.java:14",
+        "Signer.java:15"
+      ],
+      "fanout": 0,
+      "boundary": false,
+      "debt": 1.0,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "LocalSigner.java:4",
+      "node": "LocalSigner.java:4",
+      "smell": "AlgLit",
+      "file": "LocalSigner.java",
+      "line": 4,
+      "evidence": "return Signature.getInstance(\"SHA256withRSA\");",
+      "path": [
+        "LocalSigner.java:4"
+      ],
+      "fanout": 0,
+      "boundary": false,
+      "debt": 1.0,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "LocalSigner.java:4",
+      "node": "LocalSigner.java:4",
+      "smell": "Config",
+      "file": "LocalSigner.java",
+      "line": 4,
+      "evidence": "return Signature.getInstance(\"SHA256withRSA\");",
+      "path": [
+        "LocalSigner.java:4"
+      ],
+      "fanout": 0,
+      "boundary": false,
+      "debt": 1.0,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "Signer.java:5",
+      "node": "Signer.java:5",
+      "smell": "AlgLit",
+      "file": "Signer.java",
+      "line": 5,
+      "evidence": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "path": [
+        "Signer.java:5"
+      ],
+      "fanout": 13,
+      "boundary": true,
+      "debt": 7.211032383086406,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "Signer.java:5",
+      "node": "Signer.java:5",
+      "smell": "Config",
+      "file": "Signer.java",
+      "line": 5,
+      "evidence": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "path": [
+        "Signer.java:5"
+      ],
+      "fanout": 13,
+      "boundary": true,
+      "debt": 7.211032383086406,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "Signer.java:5",
+      "node": "Signer.java:5",
+      "smell": "Provider",
+      "file": "Signer.java",
+      "line": 5,
+      "evidence": "Signature signer = Signature.getInstance(\"SHA256withRSA\", \"SunRsaSign\");",
+      "path": [
+        "Signer.java:5"
+      ],
+      "fanout": 13,
+      "boundary": true,
+      "debt": 7.211032383086406,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "Signer.java:5",
+      "node": "Signer.java:11",
+      "smell": "Serialize",
+      "file": "Signer.java",
+      "line": 11,
+      "evidence": "save(signature);",
+      "path": [
+        "Signer.java:5",
+        "Signer.java:6",
+        "Signer.java:7",
+        "Signer.java:8",
+        "Signer.java:10",
+        "Signer.java:11"
+      ],
+      "fanout": 3,
+      "boundary": true,
+      "debt": 4.5,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "Signer.java:5",
+      "node": "Signer.java:9",
+      "smell": "SizeAssump",
+      "file": "Signer.java",
+      "line": 9,
+      "evidence": "byte[] frame = new byte[256];",
+      "path": [
+        "Signer.java:5",
+        "Signer.java:6",
+        "Signer.java:7",
+        "Signer.java:8",
+        "Signer.java:4",
+        "Signer.java:9"
+      ],
+      "fanout": 6,
+      "boundary": true,
+      "debt": 5.7110323830864065,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "Signer.java:5",
+      "node": "Signer.java:14",
+      "smell": "Serialize",
+      "file": "Signer.java",
+      "line": 14,
+      "evidence": "public void save(byte[] signature) {",
+      "path": [
+        "Signer.java:5",
+        "Signer.java:6",
+        "Signer.java:7",
+        "Signer.java:8",
+        "Signer.java:10",
+        "Signer.java:11",
+        "Signer.java:14"
+      ],
+      "fanout": 2,
+      "boundary": true,
+      "debt": 3.877443751081734,
+      "confidence": "bounded syntactic dependency"
+    },
+    {
+      "root": "Signer.java:5",
+      "node": "Signer.java:15",
+      "smell": "SizeAssump",
+      "file": "Signer.java",
+      "line": 15,
+      "evidence": "if (signature.length != 256) throw new IllegalArgumentException();",
+      "path": [
+        "Signer.java:5",
+        "Signer.java:6",
+        "Signer.java:7",
+        "Signer.java:8",
+        "Signer.java:10",
+        "Signer.java:11",
+        "Signer.java:14",
+        "Signer.java:15"
+      ],
+      "fanout": 0,
+      "boundary": false,
+      "debt": 1.0,
+      "confidence": "bounded syntactic dependency"
+    }
+  ],
+  "clusters": [
+    {
+      "root": "CryptoTest.java:5",
+      "nodes": [
+        "CryptoTest.java:5",
+        "CryptoTest.java:6",
+        "CryptoTest.java:7",
+        "CryptoTest.java:8",
+        "CryptoTest.java:10",
+        "CryptoTest.java:9",
+        "Signer.java:4",
+        "CryptoTest.java:11",
+        "CryptoTest.java:13",
+        "Signer.java:10",
+        "Signer.java:11",
+        "Signer.java:12",
+        "Signer.java:13",
+        "Signer.java:5",
+        "Signer.java:6",
+        "Signer.java:7",
+        "Signer.java:8",
+        "Signer.java:9",
+        "CryptoTest.java:14",
+        "CryptoTest.java:15",
+        "Signer.java:14",
+        "Signer.java:15",
+        "Signer.java:16"
+      ],
+      "findings": 16,
+      "debt": 76.45504583676565
+    },
+    {
+      "root": "LocalSigner.java:4",
+      "nodes": [
+        "LocalSigner.java:4"
+      ],
+      "findings": 2,
+      "debt": 2.0
+    },
+    {
+      "root": "Signer.java:5",
+      "nodes": [
+        "Signer.java:5",
+        "Signer.java:6",
+        "Signer.java:7",
+        "Signer.java:8",
+        "Signer.java:10",
+        "Signer.java:4",
+        "Signer.java:11",
+        "Signer.java:12",
+        "Signer.java:13",
+        "Signer.java:9",
+        "Signer.java:14",
+        "Signer.java:15",
+        "Signer.java:16"
+      ],
+      "findings": 7,
+      "debt": 36.72157328342736
+    }
+  ],
+  "suppressions": [],
+  "unresolved": [],
+  "cadi": 52.61496230476268,
+  "dmax": 100,
+  "smell_counts": {
+    "AlgLit": 4,
+    "Config": 4,
+    "Provider": 3,
+    "Protocol": 1,
+    "Serialize": 5,
+    "SizeAssump": 6,
+    "TestOracle": 1,
+    "KeyType": 1
+  },
+  "scope": "Bounded syntactic Java dependency analysis using source-statement nodes",
+  "environment": {
+    "python": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "scipy": "1.16.0"
+  },
+  "refactoring_recipes": [
+    {
+      "root": "CryptoTest.java:5",
+      "file": "CryptoTest.java",
+      "line": 5,
+      "smell": "AlgLit",
+      "recipe": "role_factory",
+      "guard": "automatic only for supported local literal selectors"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "CryptoTest.java",
+      "line": 5,
+      "smell": "Config",
+      "recipe": "role_factory",
+      "guard": "automatic only for supported local literal selectors"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "CryptoTest.java",
+      "line": 5,
+      "smell": "Provider",
+      "recipe": "provider_adapter",
+      "guard": "assisted: validate provider behavior"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "CryptoTest.java",
+      "line": 10,
+      "smell": "Protocol",
+      "recipe": "capability_negotiation",
+      "guard": "assisted: explicit suite order and peer policy"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "CryptoTest.java",
+      "line": 10,
+      "smell": "Serialize",
+      "recipe": "versioned_crypto_envelope",
+      "guard": "assisted: choose version and legacy decoder"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "CryptoTest.java",
+      "line": 10,
+      "smell": "SizeAssump",
+      "recipe": "dynamic_representation_size",
+      "guard": "assisted: define max bound and peer/storage compatibility"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "CryptoTest.java",
+      "line": 11,
+      "smell": "SizeAssump",
+      "recipe": "dynamic_representation_size",
+      "guard": "assisted: define max bound and peer/storage compatibility"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "CryptoTest.java",
+      "line": 11,
+      "smell": "TestOracle",
+      "recipe": "semantic_test_oracle",
+      "guard": "assisted: retain standards/known-answer tests"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "CryptoTest.java",
+      "line": 13,
+      "smell": "KeyType",
+      "recipe": "generic_key_boundary",
+      "guard": "assisted: prove no algorithm-specific key methods remain"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "Signer.java",
+      "line": 11,
+      "smell": "Serialize",
+      "recipe": "versioned_crypto_envelope",
+      "guard": "assisted: choose version and legacy decoder"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "Signer.java",
+      "line": 5,
+      "smell": "AlgLit",
+      "recipe": "role_factory",
+      "guard": "automatic only for supported local literal selectors"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "Signer.java",
+      "line": 5,
+      "smell": "Config",
+      "recipe": "role_factory",
+      "guard": "automatic only for supported local literal selectors"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "Signer.java",
+      "line": 5,
+      "smell": "Provider",
+      "recipe": "provider_adapter",
+      "guard": "assisted: validate provider behavior"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "Signer.java",
+      "line": 9,
+      "smell": "SizeAssump",
+      "recipe": "dynamic_representation_size",
+      "guard": "assisted: define max bound and peer/storage compatibility"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "Signer.java",
+      "line": 14,
+      "smell": "Serialize",
+      "recipe": "versioned_crypto_envelope",
+      "guard": "assisted: choose version and legacy decoder"
+    },
+    {
+      "root": "CryptoTest.java:5",
+      "file": "Signer.java",
+      "line": 15,
+      "smell": "SizeAssump",
+      "recipe": "dynamic_representation_size",
+      "guard": "assisted: define max bound and peer/storage compatibility"
+    },
+    {
+      "root": "LocalSigner.java:4",
+      "file": "LocalSigner.java",
+      "line": 4,
+      "smell": "AlgLit",
+      "recipe": "role_factory",
+      "guard": "automatic only for supported local literal selectors"
+    },
+    {
+      "root": "LocalSigner.java:4",
+      "file": "LocalSigner.java",
+      "line": 4,
+      "smell": "Config",
+      "recipe": "role_factory",
+      "guard": "automatic only for supported local literal selectors"
+    },
+    {
+      "root": "Signer.java:5",
+      "file": "Signer.java",
+      "line": 5,
+      "smell": "AlgLit",
+      "recipe": "role_factory",
+      "guard": "automatic only for supported local literal selectors"
+    },
+    {
+      "root": "Signer.java:5",
+      "file": "Signer.java",
+      "line": 5,
+      "smell": "Config",
+      "recipe": "role_factory",
+      "guard": "automatic only for supported local literal selectors"
+    },
+    {
+      "root": "Signer.java:5",
+      "file": "Signer.java",
+      "line": 5,
+      "smell": "Provider",
+      "recipe": "provider_adapter",
+      "guard": "assisted: validate provider behavior"
+    },
+    {
+      "root": "Signer.java:5",
+      "file": "Signer.java",
+      "line": 11,
+      "smell": "Serialize",
+      "recipe": "versioned_crypto_envelope",
+      "guard": "assisted: choose version and legacy decoder"
+    },
+    {
+      "root": "Signer.java:5",
+      "file": "Signer.java",
+      "line": 9,
+      "smell": "SizeAssump",
+      "recipe": "dynamic_representation_size",
+      "guard": "assisted: define max bound and peer/storage compatibility"
+    },
+    {
+      "root": "Signer.java:5",
+      "file": "Signer.java",
+      "line": 14,
+      "smell": "Serialize",
+      "recipe": "versioned_crypto_envelope",
+      "guard": "assisted: choose version and legacy decoder"
+    },
+    {
+      "root": "Signer.java:5",
+      "file": "Signer.java",
+      "line": 15,
+      "smell": "SizeAssump",
+      "recipe": "dynamic_representation_size",
+      "guard": "assisted: define max bound and peer/storage compatibility"
+    }
+  ]
+}
